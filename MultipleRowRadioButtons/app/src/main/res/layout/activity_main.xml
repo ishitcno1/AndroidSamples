@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.edinstudio.app.samples.multiplerowradiobuttons.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/first_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/type1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type1"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/type2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type2" />
+
+        <RadioButton
+            android:id="@+id/type3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type3" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/second_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_group"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/type4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type4" />
+
+        <RadioButton
+            android:id="@+id/type5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type5" />
+
+        <RadioButton
+            android:id="@+id/type6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RadioButton"
+            android:text="type6" />
+    </RadioGroup>
+
+    <Button
+        android:layout_below="@id/second_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Type"
+        android:onClick="showType" />
+</RelativeLayout>
