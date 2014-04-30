@@ -5,6 +5,7 @@
 - [MultipleRowRadioButtons](#multipleRowRadioButtons)
 - [DatePicker](#datePicker)
 - [PassObject](#passObject)
+- [Guide](#guide)
 
 ## MyActionBar  
 <span id="myactionbar"></span>
@@ -25,3 +26,7 @@ Two DatePickerDialog in the same Activity of Android. Use inner class for conven
 ## PassObject
 <span id="passObject"></span>
 Pass object within intent in android. Use serializable or parcelable.
+
+## Guide
+<span id="guide"></span>
+Guide pages at app startup. The code and images is from [here][http://blog.csdn.net/shadow066/article/details/17614833].
